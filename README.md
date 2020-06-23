@@ -33,7 +33,8 @@ FUNTIONAL REQUIREMENTS for the Website:-
 3.	JAVASCRIPT: Used to create the logic of the web application.
 4.	PHP: For frontend-backend connectivity.
 5.	MySql: For Storing the database.
-6.	
+6. Xampp Server to host the website.
+
 NON- FUNCTIONAL REQUIREMENTS:-
 1.PHD Automobile Showroom:
  The website manages this particular Car Company.
