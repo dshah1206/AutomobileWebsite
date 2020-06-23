@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Book A Car</title>
+	<link rel="import" href="temp1.html">
+	<script src="js/temp.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="header" style="padding-bottom:10px !important;margin-bottom: 0px ; padding: 1px; text-align: center ;background-color:#000000 ; color:white">
+  <h1 style="font-family: fontawesome;font-size: 40px ">BOOK NOW</h1>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top mx-100">
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="cursor: pointer;">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="temp1.html">HOME</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link" href="car_model.html">
+       CAR MODEL
+      </a>
+    </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">SERVICES</a>
+      </li>   
+      <li class="nav-item">
+        <a class="nav-link" href="contact_us.html">ABOUT US</a>
+      </li> 
+    </ul>
+  </div> 
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="cursor: pointer;">
+    <ul class="navbar-nav ml-auto">  
+      <li class="nav-item ">
+        <a class="nav-link" href="home.html">LOGOUT</a>
+      </li> 
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-fluid text-center text-dark" style="width:100%;height:100% !important; padding-top: 100px !important; margin-bottom:0; background-color: white; font-family: fontawesome !important; font-size: 25px ;font-weight: bolder">
+	<form class="loginform" name="loginform" onsubmit="return validateFormL()" action="book.php" autocomplete="off" method="POST">
+		<center>
+		  <div class="username"> 
+			USERNAME:<input class="bg-light" type="text" name="uname" required>
+		  </div>
+      <label>  CAR MODEL:</label>
+    <select  name="model" class="bg-light border border-secondary border-bottom-0 border-right-0 mt-3" style="width:274px !important; height: 37px;" required>
+        <option value="" disabled="disabled" selected="selected">Please select a model</option>
+        <option value="ECO-SPORT">ECO-SPORT</option>
+        <option value="ENDEAVOR">ENDEAVOR</option>
+        <option value="MUSTANG">MUSTANG</option>
+        <option value="ACCORD">ACCORD</option>
+        <option value="BRV">BRV</option>
+        <option value="CITY">CITY</option>
+        <option value="CIAZ">CIAZ</option>
+        <option value="BALENO RS">BALENO RS</option>
+        <option value="VITARA BREZZA">VITARA BREZZA</option>
+        <option value="3 SERIES GT">3 SERIES GT</option>
+        <option value="5 SERIES">5 SERIES</option>
+        <option value="7 SERIES">7 SERIES</option>
+    </select>
+    <br>
+     <input class="btn btn-outline-primary" type="submit" value="SUBMIT">  
+    </center>
+	</form>
+</div>
+<div class="jumbotron jumbotron-fluid text-center text-danger" style=" position:fixed !important;width: 100% !important; height:auto ;margin-bottom:0; background-color: black !important;padding-top: 100px !important ">
+  <p>
+      By using this service, you accept the terms of our Visitor Agreement.Privacy Statement. AdChoices
+      © 2018 Autotrader, Inc. All Rights Reserved.<br> "Autotrader" is a registered trademark of TPI Holdings, Inc. used under exclusive license.
+  </p>
+</div> 
+</body>
+</html>

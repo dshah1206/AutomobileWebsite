@@ -1,0 +1,65 @@
+
+.header{
+	padding: 1px;
+	text-align: center;
+	background-color:#000000;
+	color: white;
+}
+.header h1{
+	font-size: 40px;
+	font-style: SANS-SERIF;
+}
+.header p{
+	font-size: 20px;
+	font-family: fontawesome;
+}
+ 
+.coverimg{
+	
+ 	opacity: 0.6;
+ 	background-image: url("car1.jpg");
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	height:100%;
+ 	padding: 0px;
+ 	opacity:80%;
+
+ 	
+ }
+.coverimg>h1{
+	margin-top: 0px;
+	padding: 0px;
+}
+.footer{
+	color: white;
+	background-color: tomato;
+	padding: 2%;
+}
+.footer p{
+	text-align: center;
+}
+
+.loginform{
+	width: 30%;
+	height: 40%;
+	border: 1px solid black;
+	padding: 5%;
+	font-size: 20px;
+	position: fixed;
+	top: 15%;
+	left: 30%;
+	border-radius: 15px;
+}
+
+
+input{
+	font-size: 20px;
+}
+
+
+ body,html{
+ 	height: 100%
+ }
+
+ 

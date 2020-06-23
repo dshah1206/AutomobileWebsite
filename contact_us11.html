@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Service Contact Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"
+  type = "text/css" 
+  href="css/contact_us.css">
+</head>
+<body>
+
+  <div class="header" style="padding-bottom:10px !important;  margin-bottom: 0px ; padding: 1px; text-align: center ;background-color:#000000 ; color:white">
+    <h1 style="font-family: fontawesome;font-size: 40px ">BOOK A SERVICE</h1>
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top mx-100">
+    <div class="collapse navbar-collapse" id="collapsibleNavbar" style="cursor: pointer;">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="temp1.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="car_model.html">
+           CAR MODEL
+         </a>
+       </li>
+      <!--<li class="nav-item">
+        <a class="nav-link" href="#">CAR MODEL</a>
+      </li>-->
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">SERVICES</a>
+      </li>   
+      <li class="nav-item">
+        <a class="nav-link" href="contact_us.html">ABOUT US</a>
+      </li>   
+    </ul>
+  </div> 
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="cursor: pointer;">
+    <ul class="navbar-nav ml-auto">  
+      <li class="nav-item ">
+        <a class="nav-link" href="home.html">LOGOUT</a>
+      </li> 
+    </ul>
+  </div>
+</nav>
+<div class="bg text-center" style="height: auto !important;">
+ <section id="content">
+  <div class="sub-page" style="padding-left:100px ;padding-bottom: 30px !important ">
+    <div class="sub-page-left box-9">
+      <h2>DETAILS</h2><br>
+      <form class="loginform" name="loginform"  onsubmit="return validateFormL()" action="service.php" autocomplete="off" method="POST">
+        <fieldset>
+          <div class="username"> 
+            USERNAME:<input class="bg-light ml-1" type="text" name="uname" style="width: 300px !important" required>
+          </div>
+               <!-- <div class="password">
+              PASSWORD:<input class="bg-light mt-3 ml-1" type="Password" name="pass" style="width: 300px !important" >
+            </div>-->
+            <div class="model"></div>
+            EMPLOYEE :
+            <select name="emp" class="bg-light border-0 mt-3 ml-0" style="width:304px !important; height: 24px; " required>
+              <option  value="" disabled="disabled" selected="selected"></option>
+              <option value="1">FOR OILING</option>
+              <option value="2">FOR WASHING</option>
+              <option value="3">FOR FULL SERVICE</option>
+              <option value="4">FOR REPAIR</option>
+            </select>
+            <div class="model"></div>
+            SERVICE TYPE:
+            <select name="tservice" class="bg-light border-0 mt-3 ml-0" style="width:304px !important; height: 24px; " required>
+              <option  value="" disabled="disabled" selected="selected"></option>
+              <option value="OILING">OILING</option>
+              <option value="WASHING">WASHING</option>
+              <option value="FULL SERVICE">FULL SERVICE</option>
+              <option value="REPAIR">REPAIR</option>
+            </select>
+            <div class="type"></div>
+            CAR MODEL:
+            <select name="carmodel" class="bg-light border-0 mt-3 ml-0" style="width:304px !important; height: 24px; " required>
+              <option  value="" disabled="disabled" selected="selected"></option>
+              <option value="ECO-SPORT">ECO-SPORT</option>
+              <option value="ENDEAVOR">ENDEAVOR</option>
+              <option value="MUSTANG">MUSTANG</option>
+              <option value="ACCORD">ACCORD</option>
+              <option value="BRV">BRV</option>
+              <option value="CITY">CITY</option>
+              <option value="CIAZ">CIAZ</option>
+              <option value="BALENO RS">BALENO RS</option>
+              <option value="VITARA BREZZA">VITARA BREZZA</option>
+              <option value="3 SERIES GT">3 SERIES GT</option>
+              <option value="5 SERIES">5 SERIES</option>
+              <option value="7 SERIES">7 SERIES</option>
+            </select>
+            <div class="date"> 
+              DATE:<input class="bg-light ml-5 mt-3" type="text" name="date1" placeholder="YYYY-MM-DD" style="width: 300px !important" required>
+            </div>
+
+            <!--<label>
+              <input type="text" value="Name" required onBlur="if(this.value=='') this.value='Name'" onFocus="if(this.value =='Name' ) this.value=''" >
+            </label>
+            <label>
+              <input type="text" value="Email" required onBlur="if(this.value=='') this.value='Email'" onFocus="if(this.value =='Email' ) this.value=''" >
+            </label>
+            <label>
+              <input type="text" value="Phone" required onBlur="if(this.value=='') this.value='Phone'" onFocus="if(this.value =='Phone' ) this.value=''" >
+            </label>
+            <label>
+              <textarea required onBlur="if(this.value==''){this.value='MESSAGE'}" onFocus="if(this.value=='MESSAGE'){this.value=''}">MESSAGE</textarea>
+            </label>
+            <div class="btns">
+              <a href="#" class="button" onClick="document.getElementById('form').reset();">Clear</a>
+              <a href="#" class="button" onClick="document.getElementById('form').submit()">Send</a></div>-->
+              <input class="btn btn-outline-primary" style="margin-left:30px; margin-top:30px;" type="submit" value="SUBMIT">  
+            </fieldset>
+          </form>
+        </div>
+     <!-- <div class="sub-page-right">
+        <h2>Find Us</h2>
+        <div class="map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.012537983463!2d72.83491871428578!3d19.107105887070006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c676018b43%3A0x75f29a4205098f99!2sDwarkadas+Jivanlal+Sanghvi+College+of+Engineering!5e0!3m2!1sen!2sin!4v1538829283337"></iframe>
+        </div>
+        <dl class="adr">
+          <dt>Bhaktivedanta-Swami Rd, VileParle West,<br>MUMBAI
+            </dt>
+          <dd>Telephone:+91-9123456789</dd>
+          <dd>E-mail:<a href="#" class="link">phdshah18@gmail.com</a></dd>
+        </dl>
+      </div>-->
+    </div>
+  </section>
+  <footer>By using this service, you accept the terms of our Visitor Agreement.Privacy Statement. AdChoices
+    © 2018 Autotrader, Inc. All Rights Reserved.<br> "Autotrader" is a registered trademark of TPI Holdings, Inc. used under exclusive license.</footer>
+  </div>
+<!--<div class="jumbotron jumbotron-fluid text-center text-danger" style="height:auto ;margin-bottom:0; background-color: black !important;">
+  <p>
+      By using this service, you accept the terms of our Visitor Agreement.Privacy Statement. AdChoices
+      © 2018 Autotrader, Inc. All Rights Reserved.<br> "Autotrader" is a registered trademark of TPI Holdings, Inc. used under exclusive license.
+  </p>
+</div> -->
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Registration Page </title>
+	<link rel="import" href="temp1.html">
+	<script src="js/temp.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="header" style="padding-bottom:10px !important;margin-bottom: 0px ; padding: 1px; text-align: center ;background-color:#000000 ; color:white">
+  <h1 style="font-family: fontawesome;font-size: 40px ">REGISTRATION PAGE</h1>
+</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top mx-100">
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="cursor: pointer;">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">HOME</a>
+      </li>
+     <!--<li class="nav-item">
+      <a class="nav-link" href="car_model.html">
+       CAR MODEL
+      </a>
+    </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">SERVICES</a>
+      </li>   
+    <li class="nav-item">
+        <a class="nav-link" href="contact_us.html">CONTACT</a>
+      </li>   
+      <li class="nav-item">-->
+        <a class="nav-link" href="about_us1.html">ABOUT US</a>
+      </li> 
+    </ul>
+  </div> 
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="cursor: pointer;">
+    <ul class="navbar-nav ml-auto">  
+      <li class="nav-item ">
+        <a class="nav-link" href="login.html">LOGIN</a>
+      </li> 
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-fluid text-center text-dark" style="height:auto; margin-bottom:0; background-color: white; font-family: fontawesome !important; font-size: 15px ;font-weight: bolder">
+	<form name="registrationform" class="registrationform" onsubmit="return validateFormR()" action="register.php" autocomplete="off" method="POST">
+		NAME:<input class="bg-light" type="text" name="name" style="width:300px" required><br><br>
+		ADDRESS:<textarea class="bg-light" type="text" name="address" style="width:300px" required> </textarea>
+		</br></br>
+		PINCODE:<input class="bg-light" type="text" name="pincode" style="width:300px">
+		</br></br>
+		E-MAIL:<input class="bg-light" type="email" name="email" style="width:300px">
+		</br></br>
+		CONTACT:<input class="bg-light" type="text" name="contact" style="width:300px" required>
+		</br></br>
+		USERNAME:<input class="bg-light" type="text" name="uname" style="width:300px" required>
+		</br></br>
+		PASSWORD:<input class="bg-light" type="Password" name="pass" style="width:300px" required>
+		</br></br>
+		<input class="btn btn-outline-primary"style="font-size: 25px;" type="submit" value="submit" >
+	</form>
+</div>
+<div class="jumbotron jumbotron-fluid text-center text-danger" style="height:auto ;margin-bottom:0; background-color: black !important;">
+  <p>
+      By using this service, you accept the terms of our Visitor Agreement.Privacy Statement. AdChoices
+      © 2018 Autotrader, Inc. All Rights Reserved.<br> "Autotrader" is a registered trademark of TPI Holdings, Inc. used under exclusive license.
+  </p>
+</div> 
+</body>
+</html>
